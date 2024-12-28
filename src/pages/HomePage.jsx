@@ -28,6 +28,7 @@ function HomePage() {
   };
 
   const handleAnswerSelect = (answerIndex) => {
+    console.log(selectedAnswers);
     setSelectedAnswers({
       ...selectedAnswers,
       [currentQuestion]: answerIndex,
@@ -49,6 +50,7 @@ function HomePage() {
   };
 
   const handleQuestionSelect = (questionNumber) => {
+    console.log(questionNumber);
     setCurrentQuestion(questionNumber);
   };
 
@@ -104,6 +106,7 @@ function HomePage() {
                 />
 
                 <QuestionNumbers
+                  selectedAnswer={selectedAnswers}
                   totalQuestions={questions.length}
                   currentQuestion={currentQuestion}
                   onQuestionSelect={handleQuestionSelect}
