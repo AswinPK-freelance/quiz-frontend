@@ -21,6 +21,7 @@ const QuestionNumbers = ({
   console.log(Object.keys(selectedAnswer), "OBJEt");
   const intArr = Object.keys(selectedAnswer).map((x) => parseInt(x));
   console.log(intArr, "INT ARRY");
+  console.log("THE Branch tets aded");
   console.log(intArr); // [1, 2, 3, 4, 5]
 
   if (intArr.includes(currentQuestion)) {
